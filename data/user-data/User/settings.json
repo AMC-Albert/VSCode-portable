@@ -2,13 +2,13 @@
 	// ═══════════════════════════════════════════════════════════════════════════════
 	// FONTS & TYPOGRAPHY
 	// ═══════════════════════════════════════════════════════════════════════════════
-	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontFamily": "JetBrainsMono Nerd Font Propo, JetBrains Mono Nerd Font, JetBrains Mono",
 	"editor.fontSize": 14,
 	"editor.fontWeight": "350",
 	"editor.lineHeight": 24,
 	"terminal.integrated.fontSize": 14,
-	"debug.console.fontFamily": "JetBrains Mono",
-	"chat.editor.fontFamily": "JetBrains Mono",
+	"debug.console.fontFamily": "JetBrainsMono Nerd Font Propo, JetBrains Mono Nerd Font, JetBrains Mono",
+	"chat.editor.fontFamily": "JetBrainsMono Nerd Font Propo, JetBrains Mono Nerd Font, JetBrains Mono",
 	// ═══════════════════════════════════════════════════════════════════════════════
 	// THEMES & APPEARANCE
 	// ═══════════════════════════════════════════════════════════════════════════════
