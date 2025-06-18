@@ -1,9 +1,11 @@
 *
-!.gitignore
-!README.md
+!/.gitignore
+!/README.md
 !data
 !data/extensions
 !data/extensions/extensions.json
+!data/extensions/*/
+!data/extensions/*/package.json
 !data/user-data
 !data/user-data/User
 !data/user-data/User/keybindings.json
