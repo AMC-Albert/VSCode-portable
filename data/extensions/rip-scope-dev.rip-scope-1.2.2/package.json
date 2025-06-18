@@ -1,0 +1,294 @@
+{
+	"name": "rip-scope",
+	"author": "Albert O'Shea",
+	"publisher": "rip-scope-dev",
+	"displayName": "RipScope",
+	"description": "System-wide directory search and workspace management using ripgrep and fzf.",
+	"version": "1.2.2",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AMC-Albert/rip-scope"
+	},
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"ripgrep",
+		"fzf",
+		"rg",
+		"search",
+		"directories",
+		"workspace",
+		"file-explorer"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "rip-scope.unifiedSearch",
+				"title": "Search Directories",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.addToWorkspace",
+				"title": "Add Folders to Workspace",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.replaceWorkspace",
+				"title": "Replace Workspace",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.replaceWithParentFolder",
+				"title": "Replace Workspace with Parent Folder",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.openParentFolder",
+				"title": "Open Parent Folder",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.createFolder",
+				"title": "Create Folder",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.openFolder",
+				"title": "Open Folder",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.clearCache",
+				"title": "Clear Search Cache",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.resetSettings",
+				"title": "Reset Settings to Default",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.removeSelectedFolder",
+				"title": "Remove Selected Folder from Workspace",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.closeAndDeleteWorkspace",
+				"title": "Close and Delete Workspace",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.selectMoveDestination",
+				"title": "Select Move Destination",
+				"category": "RipScope"
+			},
+			{
+				"command": "rip-scope.selectCopyDestination",
+				"title": "Select Copy Destination",
+				"category": "RipScope"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "rip-scope.unifiedSearch",
+				"key": "ctrl+alt+s",
+				"mac": "cmd+alt+s"
+			},
+			{
+				"command": "rip-scope.removeSelectedFolder",
+				"key": "ctrl+shift+delete",
+				"mac": "cmd+shift+delete"
+			}
+		],
+		"configuration": {
+			"title": "RipScope",
+			"properties": {
+				"ripScope.searchPath": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "List of search paths for directory search - first valid directory wins (leave empty to search from home directory)"
+				},
+				"ripScope.excludePatterns": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"node_modules",
+						"packages",
+						".git",
+						"lfs",
+						".svn",
+						".vscode",
+						"target",
+						"build",
+						"dist",
+						".next",
+						".nuxt",
+						"lib",
+						"site-packages",
+						"__pycache__",
+						"__MACOSX",
+						".DS_Store",
+						".venv",
+						".env",
+						"venv",
+						"env",
+						".pytest_cache",
+						"miniconda3",
+						"miniconda",
+						".mypy_cache",
+						".tox",
+						"coverage",
+						".coverage",
+						".nyc_output",
+						"logs",
+						"*.log",
+						"tmp",
+						"temp",
+						".tmp",
+						".temp",
+						"cache",
+						".cache",
+						"*.swp",
+						"*.swo",
+						"AppData",
+						"Application Data",
+						"System Volume Information",
+						"Recovery",
+						"$Recycle.Bin",
+						"$RECYCLE.BIN",
+						"ProgramData",
+						"Program Files",
+						"Program Files (x86)",
+						"Windows",
+						".android",
+						".aws",
+						".azure",
+						".docker",
+						".npm",
+						".nvm",
+						".gradle",
+						".m2",
+						".maven",
+						".cargo",
+						".rustup",
+						".go",
+						".dotnet",
+						".nuget",
+						".yarn",
+						".pnpm-store",
+						"pnpm-store",
+						".local/share",
+						".config",
+						".ssh",
+						".gnupg",
+						".gpg",
+						"ShaderCache",
+						"PackageCache",
+						"StateCache",
+						"ScriptAssemblies",
+						"BurstCache",
+						"Artifacts",
+						"CMakeFiles"
+					],
+					"description": "Patterns to exclude from search (default includes common build/cache directories)"
+				},
+				"ripScope.ripgrepPath": {
+					"type": "string",
+					"default": "auto",
+					"description": "Path to ripgrep executable (use 'auto' for automatic detection, 'rg' if in PATH, or specify full path)"
+				},
+				"ripScope.fzfPath": {
+					"type": "string",
+					"default": "fzf",
+					"description": "Path to fzf executable (use 'fzf' if in PATH)"
+				},
+				"ripScope.fzfOptions": {
+					"type": "string",
+					"default": "--scheme=path --tiebreak=pathname,length --smart-case",
+					"description": "Additional options to pass to fzf for sorting and ranking behavior"
+				},
+				"ripScope.enableCache": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable caching of search results for faster subsequent searches"
+				},
+				"ripScope.enableBackgroundRefresh": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enable background cache refresh for better performance (automatically refreshes expired cache in background)"
+				},
+				"ripScope.uiDisplayLimit": {
+					"type": "number",
+					"default": 100,
+					"description": "Maximum number of items to display in the UI before requiring filtering"
+				},
+				"ripScope.boostGitRepos": {
+					"type": "boolean",
+					"default": true,
+					"description": "Give higher priority to git repos (folders that contain a .git folder)"
+				},
+				"ripScope.includeWorkspaceFiles": {
+					"type": "boolean",
+					"default": true,
+					"description": "Include .code-workspace files in search results with high priority"
+				},
+				"ripScope.additionalRipgrepArgs": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"--max-depth=10",
+						"--hidden",
+						"--no-ignore"
+					],
+					"description": "Additional command-line arguments to pass to ripgrep"
+				},
+				"ripScope.fzfFilterArgs": {
+					"type": "string",
+					"default": "--algo=v1 --tiebreak=length --no-info --no-scrollbar",
+					"description": "Additional arguments to pass to fzf in filter mode (core arguments like --filter are automatically handled)"
+				},
+				"ripScope.fzfRankingArgs": {
+					"type": "string",
+					"default": "--print0 --read0 --no-info --no-scrollbar",
+					"description": "Arguments to pass to fzf when ranking all items without filtering"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "pnpm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "pnpm run compile && pnpm run lint",
+		"lint": "eslint src",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^10.0.10",
+		"@types/node": "20.x",
+		"@types/vscode": "^1.90.0",
+		"@typescript-eslint/eslint-plugin": "^8.34.1",
+		"@typescript-eslint/parser": "^8.34.1",
+		"@vscode/test-cli": "^0.0.10",
+		"@vscode/test-electron": "^2.5.2",
+		"eslint": "^9.29.0",
+		"typescript": "^5.8.3"
+	},
+	"__metadata": {
+		"installedTimestamp": 1750242790461,
+		"targetPlatform": "undefined",
+		"size": 313140
+	}
+}

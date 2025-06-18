@@ -2,13 +2,13 @@
 	// ═══════════════════════════════════════════════════════════════════════════════
 	// FONTS & TYPOGRAPHY
 	// ═══════════════════════════════════════════════════════════════════════════════
-	"editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+	"editor.fontFamily": "JetBrains Mono",
 	"editor.fontSize": 14,
 	"editor.fontWeight": "350",
 	"editor.lineHeight": 24,
 	"terminal.integrated.fontSize": 14,
-	"debug.console.fontFamily": "JetBrainsMono Nerd Font Propo",
-	"chat.editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+	"debug.console.fontFamily": "JetBrains Mono",
+	"chat.editor.fontFamily": "JetBrains Mono",
 	// ═══════════════════════════════════════════════════════════════════════════════
 	// THEMES & APPEARANCE
 	// ═══════════════════════════════════════════════════════════════════════════════
@@ -165,9 +165,7 @@
 	"markdown-preview-enhanced.codeBlockTheme": "monokai.css",
 	"markdown-preview-enhanced.previewTheme": "one-dark.css",
 	"markdown.preview.scrollEditorWithPreview": false,
-	"ripOpen.searchPath": [
-		"C:\\Users\\Albert"
-	],
+	"ripOpen.searchPath": ["C:\\Users\\Albert"],
 	// Rip Scope
-	"ripScope.fzfPath": "C:\\Users\\osheaa\\Documents\\_\\blend-vault-obsidian\\.bin\\fzf.exe",
+	"ripScope.fzfPath": "C:\\Users\\Albert\\_\\obsidian vaults\\blend-vault-obsidian\\.bin\\fzf.exe"
 }
