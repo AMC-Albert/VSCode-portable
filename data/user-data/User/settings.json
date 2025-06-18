@@ -1,0 +1,167 @@
+{
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// FONTS & TYPOGRAPHY
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+	"editor.fontSize": 14,
+	"editor.fontWeight": "350",
+	"editor.lineHeight": 24,
+	"terminal.integrated.fontSize": 14,
+	"debug.console.fontFamily": "JetBrainsMono Nerd Font Propo",
+	"chat.editor.fontFamily": "JetBrainsMono Nerd Font Propo",
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// THEMES & APPEARANCE
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"workbench.colorTheme": "Default Light Modern",
+	"workbench.preferredLightColorTheme": "Default Light Modern",
+	"workbench.preferredDarkColorTheme": "Visual Studio 2017 Dark - C++",
+	"window.autoDetectColorScheme": true,
+	"window.autoDetectHighContrast": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "material-product-icons",
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// WINDOW & LAYOUT
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"window.titleBarStyle": "custom",
+	"window.title": " ",
+	"workbench.activityBar.location": "top",
+	"workbench.statusBar.visible": true,
+	"workbench.navigationControl.enabled": false,
+	"workbench.reduceMotion": "on",
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// EDITOR UI & BEHAVIOR
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"workbench.editor.showTabs": "none",
+	"workbench.editor.editorActionsLocation": "titleBar",
+	"workbench.editor.tabActionCloseVisibility": false,
+	"zenMode.fullScreen": false,
+	// Editor Visual Elements
+	"editor.padding.top": 14,
+	"editor.padding.bottom": 14,
+	"editor.overviewRulerBorder": false,
+	"editor.scrollbar.vertical": "hidden",
+	"editor.minimap.showSlider": "always",
+	"editor.lineNumbers": "interval",
+	"editor.glyphMargin": false,
+	"editor.foldingHighlight": false,
+	"editor.scrollbar.verticalScrollbarSize": 6,
+	// Editor Guides & Highlighting
+	"editor.guides.indentation": false,
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.matchBrackets": "never",
+	"editor.guides.highlightActiveBracketPair": false,
+	// Code Intelligence
+	"editor.codeLens": false,
+	"editor.parameterHints.enabled": false,
+	"editor.inlayHints.enabled": "off",
+	"editor.showUnused": false,
+	// Cursor & Animation
+	"editor.cursorBlinking": "phase",
+	"editor.cursorSmoothCaretAnimation": "on",
+	// Formatting
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// EXPLORER & FILE MANAGEMENT
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"explorer.openEditors.visible": 1,
+	"explorer.autoReveal": false,
+	"explorer.compactFolders": true,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"workbench.tree.indent": 12,
+	"workbench.tree.renderIndentGuides": "none",
+	"window.confirmSaveUntitledWorkspace": false,
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// GIT & VERSION CONTROL
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"git.autofetch": true,
+	"git.openRepositoryInParentFolders": "never",
+	"git.decorations.enabled": true,
+	"git.diffDecoration": false,
+	"scm.diffDecorations": "none",
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// LANGUAGE SPECIFIC SETTINGS
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"svelte.enable-ts-plugin": true,
+	"css.lint.unknownAtRules": "ignore",
+	"tailwindCSS.colorDecorators": false,
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// TERMINAL
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// CUSTOM COLOR THEMES
+	// ═══════════════════════════════════════════════════════════════════════════════
+	"workbench.colorCustomizations": {
+		"[Default Light Modern]": {
+			"titleBar.activeBackground": "#f3f3f3",
+			"titleBar.activeForeground": "#333333",
+			"activityBar.background": "#f3f3f3",
+			"activityBar.foreground": "#333333",
+			"sideBar.background": "#f8f8f8",
+			"sideBar.foreground": "#333333"
+		},
+		"[Visual Studio 2017 Dark - C++]": {
+			"titleBar.activeBackground": "#1e1e1e",
+			"titleBar.activeForeground": "#cccccc",
+			"activityBar.background": "#1e1e1e",
+			"activityBar.foreground": "#cccccc",
+			"activityBarBadge.background": "#007acc",
+			"activityBarBadge.foreground": "#ffffff",
+			"sideBar.background": "#252526",
+			"sideBar.foreground": "#cccccc",
+			"statusBar.background": "#007acc",
+			"statusBar.foreground": "#ffffff"
+		}
+	},
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// EXTENSION SETTINGS
+	// ═══════════════════════════════════════════════════════════════════════════════
+	// Blender Extension
+	"blender.executables": [
+		{
+			"path": "c:\\Users\\Albert\\_\\obsidian vaults\\blend-vault-obsidian\\.blender\\builds\\bl_symlink\\blender.exe",
+			"name": "",
+			"isDebug": false
+		},
+		{
+			"path": "c:\\Users\\osheaa\\Documents\\_\\blend-vault-obsidian\\.blender\\builds\\bl_symlink\\blender.exe",
+			"name": "",
+			"isDebug": false
+		},
+		{
+			"path": "c:\\Users\\Albert\\_\\obsidian vaults\\blend-vault-obsidian\\.bin\\blender\\builds\\bl_symlink\\blender.exe",
+			"name": "",
+			"isDebug": false
+		},
+		{
+			"path": "c:\\Users\\osheaa\\Documents\\_\\blend-vault-obsidian\\.bin\\blender\\builds\\bl_symlink\\blender.exe",
+			"name": "",
+			"isDebug": false
+		}
+	],
+	"blender.environmentVariables": {},
+	"blender.addon.extensionsRepository": "user_default",
+	// Foam & Markdown
+	"foam.files.attachmentExtensions": "pdf mp3 webm wav m4a mp4 avi mov rtf txt doc docx pages xls xlsx numbers ppt pptm pptx blend",
+	"foam.placeholders.exclude": [],
+	"markdownExtended.disabledPlugins": "kbd",
+	"markdown-preview-enhanced.enablePreviewZenMode": true,
+	"markdown-preview-enhanced.codeBlockTheme": "monokai.css",
+	"markdown-preview-enhanced.previewTheme": "one-dark.css",
+	"markdown.preview.scrollEditorWithPreview": false,
+	"ripOpen.searchPath": [
+		"C:\\Users\\Albert"
+	],
+	// Rip Open
+	"ripOpen.fzfPath": "C:\\Users\\Albert\\_\\obsidian vaults\\blend-vault-obsidian\\.bin\\fzf.exe",
+}

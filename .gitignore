@@ -1,0 +1,12 @@
+*
+!.gitignore
+!README.md
+!data
+!data/extensions
+!data/extensions/extensions.json
+!data/user-data
+!data/user-data/User
+!data/user-data/User/keybindings.json
+!data/user-data/User/settings.json
+!data/user-data/User/snippets/
+!data/user-data/User/snippets/**
