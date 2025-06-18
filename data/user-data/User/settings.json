@@ -94,6 +94,12 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	// ═══════════════════════════════════════════════════════════════════════════════
 	// TERMINAL
 	// ═══════════════════════════════════════════════════════════════════════════════
@@ -162,6 +168,6 @@
 	"ripOpen.searchPath": [
 		"C:\\Users\\Albert"
 	],
-	// Rip Open
-	"ripOpen.fzfPath": "C:\\Users\\Albert\\_\\obsidian vaults\\blend-vault-obsidian\\.bin\\fzf.exe",
+	// Rip Scope
+	"ripScope.fzfPath": "C:\\Users\\osheaa\\Documents\\_\\blend-vault-obsidian\\.bin\\fzf.exe",
 }
